@@ -1,0 +1,17 @@
+CREATE TABLE bike_store (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, age INTEGER, color NONE); CREATED A TABLE, ORGANIZING INVENTORY FROM THE BIKE STORE, DISTINGUISHING EACH BIKE INTO 5 CHARACTERISTICS.   
+INSERT INTO bike_store VALUES (1, 'BMX Bike', 54, 10, 'blue'); HERE 1-16 I INSERTED THE CHARACTERISTICS OF EACH BIKE USING A SYNTAX, GIVEN QUERY RESULTS
+INSERT INTO bike_store VALUES (2, 'Mountain Bike', 69, 21, 'black');
+INSERT INTO bike_store VALUES (3, 'Princess Bike', 25, 4, 'peachy pink');
+INSERT INTO bike_store VALUES (4, 'BMX Bike XL', 99, 12, 'black');
+INSERT INTO bike_store VALUES (5, 'BMX Bike Slim', 75, 12, 'orange');
+INSERT INTO bike_store VALUES (6, 'BMX Bike', 54, 10, 'tan');
+INSERT INTO bike_store VALUES (7, 'Mountain Bike', 69, 21, 'brown');
+INSERT INTO bike_store VALUES (8, 'Princess Bike', 25, 4, 'purple power');
+INSERT INTO bike_store VALUES (9, 'BMX Bike XL', 99, 12, 'yellow');
+INSERT INTO bike_store VALUES (10, 'BMX Bike Slim', 75, 12, 'red');
+INSERT INTO bike_store VALUES (11, 'BMX Bike', 54, 10, 'metallic red');
+INSERT INTO bike_store VALUES (12, 'Mountain Bike', 69, 21, 'matte black');
+INSERT INTO bike_store VALUES (13, 'Princess Bike', 25, 4, 'rosalina baby blue');
+INSERT INTO bike_store VALUES (14, 'BMX Bike XL', 99, 12, 'desert tan');
+INSERT INTO bike_store VALUES (15, 'BMX Bike Slim', 75, 12, 'green');
+SELECT * FROM bike_store WHERE price 75>; HERE I USED A CLAUSE "WHERE" TO DETERMINE THE BIKES WE HAD IN STOCK THAT WAS NO GREATER THAN $75
