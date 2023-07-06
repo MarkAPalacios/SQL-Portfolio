@@ -65,18 +65,22 @@ INSERT INTO superbowls(Date,SB,Winner,Winner_Pts,Loser,Loser_Pts,MVP,Stadium,Cit
 INSERT INTO superbowls(Date,SB,Winner,Winner_Pts,Loser,Loser_Pts,MVP,Stadium,City,State) VALUES ('Jan 14 1968','II (2)','Green Bay Packers',33,'Oakland Raiders',14,'Bart Starr+','Orange Bowl','Miami','Florida');
 INSERT INTO superbowls(Date,SB,Winner,Winner_Pts,Loser,Loser_Pts,MVP,Stadium,City,State) VALUES ('Jan 15 1967','I (1)','Green Bay Packers',35,'Kansas City Chiefs',10,'Bart Starr+','Memorial Coliseum','Los Angeles','California');
 
+What are average, max, and min values in the data?
 SELECT AVG(Winner_Pts) AS avg_pts_scored, MAX(Winner_Pts) AS highest_score_value,
 MIN(Winner_Pts) AS lowest_score_value 
 FROM superbowls;
 
+What ways are there to group the data values that don’t exist yet (using CASE)?
 SELECT
   COUNT(CASE WHEN Winner = 'San Francisco 49ers' THEN 1 END) AS NumWins49ers,
   COUNT(CASE WHEN Winner = 'Dallas Cowboys' THEN 1 END) AS NumWinsCowboys
 FROM superbowls;
 
+What interesting ways are there to filter the data (using AND/OR)?
 SELECT * 
 FROM superbowls WHERE Winner = 'New England Patriots' OR Loser = 'New England Patriots';
 
+What about those numbers per category in the data (using HAVING)?
 SELECT Winner, AVG(Winner_Pts) AS AvgWinnerPts
 FROM superbowls
 GROUP BY Winner
