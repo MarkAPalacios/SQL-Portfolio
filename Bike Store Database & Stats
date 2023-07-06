@@ -1,3 +1,7 @@
+Create your own store. Your store should sell one type of things, like clothing or bikes, whatever you want your store to specialize in. 
+You should have a table for all the items in your store, and at least 5 columns for the kind of data you think you'd need to store. 
+You should sell at least 15 items.
+
 CREATE TABLE bike_store (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, age INTEGER, color NONE);   
 INSERT INTO bike_store VALUES (1, 'BMX Bike', 54, 10, 'blue');
 INSERT INTO bike_store VALUES (2, 'Mountain Bike', 69, 21, 'black');
@@ -14,10 +18,11 @@ INSERT INTO bike_store VALUES (12, 'Mountain Bike', 69, 21, 'matte black');
 INSERT INTO bike_store VALUES (13, 'Princess Bike', 25, 4, 'rosalina baby blue');
 INSERT INTO bike_store VALUES (14, 'BMX Bike XL', 99, 12, 'desert tan');
 INSERT INTO bike_store VALUES (15, 'BMX Bike Slim', 75, 12, 'green');
-SELECT * FROM bike_store WHERE price 75>; 
 
-The provided code is creating a table named "bike_store" with columns for ID, name, price, age, and color. 
-It then inserts multiple rows of data into the table representing different bikes available in the store.
-To find the records in the "bike_store" table where the price is greater than 75, the following query is used: SELECT * FROM bike_store WHERE price > 75;
-This query retrieves all rows from the "bike_store" table where the price column value is greater than 75. 
-It will return the records for bikes with a price higher than 75.
+Use select statements to order your items by price.
+SELECT *
+FROM bike_store
+ORDER BY price ASC;
+
+Show at least one statistic about the items.
+SELECT * FROM bike_store WHERE price 75>; 
